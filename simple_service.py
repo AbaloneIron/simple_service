@@ -1,11 +1,34 @@
 from flask import Flask, url_for, request, jsonify, make_response
-import logging, os, subprocess
+import logging, os, subprocess, re
 app = Flask(__name__)
 
 logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
+def ser_x10_status(x10_response):
+    """Takes an x10 response and returns serialized json"""
+	list_str = ''
+	x10_list = x10.response("\n")
+	for item in x10_list:
+	    m = re.search('House (\w): (.*)', item)
+		if m:
+		    if len(m.group(2)) > 1:
+				devices = m.group(2).split(",")
+				for d in devices:
+					(l,r) = d.split("=")
+					temp_dev_id = m.group(1) + l
+					status = 'off'
+					if r == 1:
+						status = 'on'
+					temp_str = '"%s": "%s" % (temp_dev_id, status)
+					if list_str:
+						list_str = list_str + ", " + temp_str
+					else:
+						list_str = temp_str
+	return list_str
+
 @app.route("/service")
 def hello():
+    """Default route. Change this to a service definition"""
     return "Hello Service!"
     
 @app.route("/service/one", methods=['GET'])
@@ -40,10 +63,15 @@ def get_x10():
     p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
     outs, errs = p.communicate()
     if p.stderr:
-        message = "There was a problem getting status of x10 devices"
+        status = "fail"
+        error = "There was a problem getting status of x10 devices (%s)" % errs
+        resp_str = ''
     else:
-        message = outs
-    return make_response(jsonify({'status': "good", 'message': "message"}), 200)
+        status = "success"
+        error = ''
+        resp_str = ser_x10_status(outs)
+        
+    return make_response(jsonify({"status": status, "message": resp_str, "error": error }), 200)
     
 #tempC = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3
     
