@@ -7,7 +7,7 @@ version = "v0.4 20180510"
 logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
 def ser_x10_status(x10_response):
-    """Takes an x10 response and returns serialized json"""
+    """Takes an x10 response and returns a dictionary of device statuses"""
     dev_dict = {}
     items = x10_response.split("\n")
     for item in items:
