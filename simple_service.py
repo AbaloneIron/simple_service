@@ -2,14 +2,14 @@ from flask import Flask, url_for, request, jsonify, make_response
 import logging, os, subprocess, re, json
 app = Flask(__name__)
 
-version = "v0.4 20180510"
+version = "version=0.4, date= 20180510"
 
 logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
 def ser_x10_status(x10_response):
-    """Takes an x10 response and returns serialized json"""
-    x10 = x10_response.decode()
+    """Takes an x10 response and returns a dictionary of device statuses"""
     dev_dict = {}
+    x10 = x10_response.decode()
     items = x10.split("\n")
     for item in items:
         m = re.search(' House (\w): (.*)', item)

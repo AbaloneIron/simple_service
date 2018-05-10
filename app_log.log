@@ -365,3 +365,5 @@ INFO:root:Device status: {}
 INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:30:10] "GET /service/x10 HTTP/1.1" 200 -
 INFO:root:Device status: {'M5': 'off', 'M4': 'off', 'M7': 'off'}
 INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:30:32] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
