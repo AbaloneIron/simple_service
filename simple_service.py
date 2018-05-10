@@ -8,8 +8,9 @@ logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
 def ser_x10_status(x10_response):
     """Takes an x10 response and returns serialized json"""
+    x10 = x10_response.decode()
     dev_dict = {}
-    items = x10_response.split("\n")
+    items = x10.split("\n")
     for item in items:
         m = re.search(' House (\w): (.*)', item)
         if m:
@@ -20,8 +21,8 @@ def ser_x10_status(x10_response):
                     temp_dev_id = m.group(1) + l
                     status = 'off'
                     if r == 1:
-		        status = 'on'
-		    dev_dict[temp_dev_id] = status
+                        status = 'on'
+                    dev_dict[temp_dev_id] = status
     return dev_dict
 
 @app.route("/")

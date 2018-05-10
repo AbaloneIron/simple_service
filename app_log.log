@@ -324,3 +324,44 @@ INFO:werkzeug: * Debugger PIN: 195-624-194
 INFO:root:Device status: {'M11': 'off', 'M5': 'off', 'M10': 'off', 'M16': 'off', 'M13': 'off', 'A1': 'off', 'M4': 'off', 'M7': 'off', 'M6': 'off', 'M1': 'off', 'M14': 'off', 'M3': 'off', 'M2': 'off', 'M15': 'off', 'M8': 'off'}
 INFO:werkzeug:192.168.0.32 - - [10/May/2018 21:47:04] "GET /service/x10 HTTP/1.1" 200 -
 INFO:werkzeug:192.168.0.32 - - [10/May/2018 21:47:11] "GET /service/one HTTP/1.1" 200 -
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:19:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:19:49] "GET /service/x10 HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:21:35] "GET /service/x10 HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:25:39] "GET /service/x10 HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:26:44] "GET /service/x10 HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:29:45] "GET /service/x10 HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 211-629-026
+INFO:root:Device status: {}
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:30:10] "GET /service/x10 HTTP/1.1" 200 -
+INFO:root:Device status: {'M5': 'off', 'M4': 'off', 'M7': 'off'}
+INFO:werkzeug:127.0.0.1 - - [10/May/2018 23:30:32] "GET /service/x10 HTTP/1.1" 200 -
