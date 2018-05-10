@@ -6,24 +6,24 @@ logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
 def ser_x10_status(x10_response):
     """Takes an x10 response and returns serialized json"""
-	list_str = ''
-	x10_list = x10.response("\n")
-	for item in x10_list:
-	    m = re.search('House (\w): (.*)', item)
-		if m:
-		    if len(m.group(2)) > 1:
-				devices = m.group(2).split(",")
-				for d in devices:
-					(l,r) = d.split("=")
-					temp_dev_id = m.group(1) + l
-					status = 'off'
-					if r == 1:
-						status = 'on'
-					temp_str = '"%s": "%s" % (temp_dev_id, status)
-					if list_str:
-						list_str = list_str + ", " + temp_str
-					else:
-						list_str = temp_str
+    list_str = ''
+    x10_list = x10_response.split("\n")
+    for item in x10_list:
+        m = re.search('House (\w): (.*)', item)
+        if m:
+            if len(m.group(2)) > 1:
+                devices = m.group(2).split(",")
+                for d in devices:
+                    (l,r) = d.split("=")
+                    temp_dev_id = m.group(1) + l
+                    status = 'off'
+                    if r == 1:
+		        status = 'on'
+		    temp_str = '"%s": "%s"' % (temp_dev_id, status)
+		    if list_str:
+		        list_str = list_str + ", " + temp_str
+		    else:
+		        list_str = temp_str
 	return list_str
 
 @app.route("/service")
