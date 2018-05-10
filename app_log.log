@@ -52,3 +52,239 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 195-624-194
 INFO:werkzeug:127.0.0.1 - - [10/May/2018 15:17:28] "GET /service/one HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [10/May/2018 15:17:39] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 16:33:56] "GET /service HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 16:33:56] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 16:34:00] "GET /service/one HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 16:34:08] "GET /service/x10 HTTP/1.1" 200 -
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:13:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:13:23] "GET /service HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:13:34] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:05/10 18:17:44 Device selected
+05/10 18:17:44 Device status
+05/10 18:17:44 Security sensor status
+05/10 18:17:44 End status
+
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:17:45] "GET /service/x10 HTTP/1.1" 200 -
+INFO:root:05/10 18:19:11 Device selected
+05/10 18:19:11 House M: 8
+05/10 18:19:11 Device status
+05/10 18:19:11 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:19:11 Security sensor status
+05/10 18:19:11 End status
+
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:19:12] "GET /service/x10 HTTP/1.1" 200 -
+INFO:root:05/10 18:19:40 Device selected
+05/10 18:19:40 House M: 8
+05/10 18:19:40 Device status
+05/10 18:19:40 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:19:40 Security sensor status
+05/10 18:19:40 End status
+
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:19:41] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:05/10 18:20:54 Device selected
+05/10 18:20:54 House M: 8
+05/10 18:20:54 Device status
+05/10 18:20:54 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:20:54 Security sensor status
+05/10 18:20:54 End status
+
+INFO:root:
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:20:55] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:05/10 18:21:48 Device selected
+05/10 18:21:48 House M: 8
+05/10 18:21:48 Device status
+05/10 18:21:48 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:21:48 Security sensor status
+05/10 18:21:48 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:21:49] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:05/10 18:24:07 Device selected
+05/10 18:24:07 House M: 8
+05/10 18:24:07 Device status
+05/10 18:24:07 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:24:07 Security sensor status
+05/10 18:24:07 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:24:08] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:['05/10 18:25:47 Device selected', '05/10 18:25:47 House M: 8', '05/10 18:25:47 Device status', '05/10 18:25:47 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:25:47 Security sensor status', '05/10 18:25:47 End status', '']
+INFO:root:05/10 18:25:47 Device selected
+05/10 18:25:47 House M: 8
+05/10 18:25:47 Device status
+05/10 18:25:47 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:25:47 Security sensor status
+05/10 18:25:47 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:25:48] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:This is the list we are woring with: ['05/10 18:27:47 Device selected', '05/10 18:27:47 House M: 8', '05/10 18:27:47 Device status', '05/10 18:27:47 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:27:47 Security sensor status', '05/10 18:27:47 End status', '']
+INFO:root:05/10 18:27:47 Device selected
+05/10 18:27:47 House M: 8
+05/10 18:27:47 Device status
+05/10 18:27:47 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:27:47 Security sensor status
+05/10 18:27:47 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:27:48] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:This is the list we are woring with: ['05/10 18:31:07 Device selected', '05/10 18:31:07 House M: 8', '05/10 18:31:07 Device status', '05/10 18:31:07 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:31:07 Security sensor status', '05/10 18:31:07 End status', '']
+INFO:root:05/10 18:31:07 Device selected
+05/10 18:31:07 House M: 8
+05/10 18:31:07 Device status
+05/10 18:31:07 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:31:07 Security sensor status
+05/10 18:31:07 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:31:08] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:05/10 18:34:43 Device selected
+05/10 18:34:43 House M: 8
+05/10 18:34:43 Device status
+05/10 18:34:43 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:34:43 Security sensor status
+05/10 18:34:43 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:34:44] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:Item: 05/10 18:40:39 Device selected
+INFO:root:05/10 18:40:39 Device selected
+05/10 18:40:39 House M: 8
+05/10 18:40:39 Device status
+05/10 18:40:39 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:40:39 Security sensor status
+05/10 18:40:39 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:40:40] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:['05/10 18:48:22 Device selected', '05/10 18:48:22 House M: 8', '05/10 18:48:22 Device status', '05/10 18:48:22 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:48:22 Security sensor status', '05/10 18:48:22 End status', '']
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10 HTTP/1.1" 500 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:23] "GET /service/x10?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:['05/10 18:48:50 Device selected', '05/10 18:48:50 House M: 8', '05/10 18:48:50 Device status', '05/10 18:48:50 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:48:50 Security sensor status', '05/10 18:48:50 End status', '']
+INFO:root:Item: 05/10 18:48:50 Device selected
+INFO:root:05/10 18:48:50 Device selected
+05/10 18:48:50 House M: 8
+05/10 18:48:50 Device status
+05/10 18:48:50 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:48:50 Security sensor status
+05/10 18:48:50 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:48:51] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:['05/10 18:53:20 Device selected', '05/10 18:53:20 House M: 8', '05/10 18:53:20 Device status', '05/10 18:53:20 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:53:20 Security sensor status', '05/10 18:53:20 End status', '']
+INFO:root:Item: 05/10 18:53:20 Device selected
+INFO:root:Raw call response: 05/10 18:53:20 Device selected
+05/10 18:53:20 House M: 8
+05/10 18:53:20 Device status
+05/10 18:53:20 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:53:20 Security sensor status
+05/10 18:53:20 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:53:21] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:['05/10 18:59:15 Device selected', '05/10 18:59:15 House M: 8', '05/10 18:59:15 Device status', '05/10 18:59:15 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 18:59:15 Security sensor status', '05/10 18:59:15 End status', '']
+INFO:root:Item count: 7
+INFO:root:Item: 05/10 18:59:15 Device selected
+INFO:root:Raw call response: 05/10 18:59:15 Device selected
+05/10 18:59:15 House M: 8
+05/10 18:59:15 Device status
+05/10 18:59:15 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 18:59:15 Security sensor status
+05/10 18:59:15 End status
+
+INFO:root:Response string: 
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 18:59:16] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:['05/10 19:03:04 Device selected', '05/10 19:03:04 House M: 8', '05/10 19:03:04 Device status', '05/10 19:03:04 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1', '05/10 19:03:04 Security sensor status', '05/10 19:03:04 End status', '']
+INFO:root:Match with: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+INFO:root:Raw call response: 05/10 19:03:04 Device selected
+05/10 19:03:04 House M: 8
+05/10 19:03:04 Device status
+05/10 19:03:04 House M: 2=1,3=1,4=1,5=1,6=1,7=1,8=1,10=1,11=1,13=1,14=1,15=1,16=1
+05/10 19:03:04 Security sensor status
+05/10 19:03:04 End status
+
+INFO:root:Response string: "M2": "off", "M3": "off", "M4": "off", "M5": "off", "M6": "off", "M7": "off", "M8": "off", "M10": "off", "M11": "off", "M13": "off", "M14": "off", "M15": "off", "M16": "off"
+INFO:werkzeug:192.168.0.32 - - [10/May/2018 19:03:05] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/fwright/projects/simple_service/simple_service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
