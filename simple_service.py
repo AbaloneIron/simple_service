@@ -1,20 +1,19 @@
 from flask import Flask, url_for, request, jsonify, make_response
-import logging, os, subprocess, re
+import logging, os, subprocess, re, json
 app = Flask(__name__)
 
-version = "v0.3 20180510"
+version = "v0.4 20180510"
 
 logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
 def ser_x10_status(x10_response):
     """Takes an x10 response and returns serialized json"""
-    list_str = ''
+    dev_dict = {}
     items = x10_response.split("\n")
     for item in items:
         m = re.search(' House (\w): (.*)', item)
         if m:
             if len(m.group(2)) > 1:
-                logging.info("Match with: %s" % m.group(2))
                 devices = m.group(2).split(",")
                 for d in devices:
                     (l,r) = d.split("=")
@@ -22,12 +21,9 @@ def ser_x10_status(x10_response):
                     status = 'off'
                     if r == 1:
 		        status = 'on'
-		    temp_str = '"%s": "%s"' % (temp_dev_id, status)
-		    if list_str:
-		        list_str = list_str + ", " + temp_str
-		    else:
-		        list_str = temp_str
-    return list_str
+		    dev_dict[temp_dev_id] = status
+    return dev_dict
+
 @app.route("/")
 def reroute():
     """Duplicate of default"""
@@ -72,13 +68,14 @@ def get_x10():
     if p.stderr:
         status = "fail"
         error = "There was a problem getting status of x10 devices (%s)" % errs
-        resp_str = ''
+        devices = {}
     else:
         status = "success"
         error = ''
-        resp_str = ser_x10_status(outs)
-        logging.info("Response string: %s" % resp_str)
-    return make_response(jsonify({"status": status, "message": resp_str, "error": error }), 200)
+        devices = ser_x10_status(outs)
+        logging.info("Device status: %s" % devices)
+    return make_response(jsonify(status=status, message=error, devices=devices), 200)
+
     
 #tempC = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3
     
