@@ -87,12 +87,10 @@ def get_x10():
 @app.route("/service/temp", methods=['GET'])
 def get_temp():
     """gets the current temperature from the Raspberry Pi"""
-    command = "int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3"
-    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
-    outs, errs = p.communicate()
+    temp = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3
     status = 'success'
-    errors = ''
-    return make_response(jsonify(status=status, error=error, temperature=outs), 200)
+    error = ''
+    return make_response(jsonify(status=status, error=error, temperature=temp), 200)
     
     
 @app.errorhandler(404)

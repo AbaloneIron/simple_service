@@ -375,3 +375,49 @@ INFO:root:Device status: {'M8': 'off', 'M7': 'off', 'M6': 'off', 'M4': 'off', 'M
 INFO:root:Device status: {'M8': 'off', 'M7': 'off', 'M6': 'off', 'M4': 'off', 'M5': 'off', 'M1': 'off'}
 INFO:root:Device status: {'M8': 'off', 'M7': 'off', 'M6': 'off', 'M4': 'off', 'M2': 'off', 'M5': 'off', 'M1': 'off'}
 INFO:root:Device status: {'M8': 'off', 'M7': 'off', 'M6': 'off', 'M4': 'off', 'M2': 'off', 'M5': 'off', 'M1': 'off'}
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:Device status: {u'M5': 'on', u'M4': 'on', u'M7': 'off', u'M6': 'on', u'M1': 'off', u'M2': 'on', u'M8': 'off'}
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:17:29] "GET /service/x10 HTTP/1.1" 200 -
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:Device status: {u'M5': 'on', u'M4': 'on', u'M7': 'off', u'M6': 'on', u'M1': 'off', u'M2': 'on', u'M8': 'off'}
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:36:52] "GET /service/x10 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:36:59] "GET /service/temp HTTP/1.1" 500 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:36:59] "GET /service/temp?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:36:59] "GET /service/temp?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:36:59] "GET /service/temp?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:37:00] "GET /service/temp?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:37:00] "GET /service/temp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:37:00] "GET /service/temp?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:38:15] "GET /service/temp HTTP/1.1" 200 -
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 195-624-194
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:48:03] "GET /service/temp HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:48:08] "GET /service/temp HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:48:09] "GET /service/temp HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.32 - - [11/May/2018 02:48:10] "GET /service/temp HTTP/1.1" 200 -
+INFO:root:Application simple_service starting...
+INFO:root:Application simple_service starting...
