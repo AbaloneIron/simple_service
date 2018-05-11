@@ -20,7 +20,7 @@ def ser_x10_status(x10_response):
                     (l,r) = d.split("=")
                     temp_dev_id = m.group(1) + l
                     status = 'off'
-                    if r == 1:
+                    if r == 1 or r == '1':
                         status = 'on'
                     dev_dict[temp_dev_id] = status
     return dev_dict
