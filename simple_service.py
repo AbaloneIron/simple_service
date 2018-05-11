@@ -1,8 +1,8 @@
 from flask import Flask, url_for, request, jsonify, make_response
-import logging, os, subprocess, re, json
+import logging, os, subprocess, re
 app = Flask(__name__)
 
-version = "version=0.4, date= 20180510"
+version = "version=0.5, date= 20180510"
 
 logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
