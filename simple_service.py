@@ -2,7 +2,7 @@ from flask import Flask, url_for, request, jsonify, make_response
 import logging, os, subprocess, re, json
 app = Flask(__name__)
 
-version = "version=0.4, date= 20180510"
+version = "version=0.5, date= 20180510"
 
 logging.basicConfig(filename="app_log.log",level=logging.DEBUG)
 
@@ -49,16 +49,21 @@ def get_gpio():
 @app.route("/service/x10/<device>/<switch>", methods=['GET'])
 def set_x10(device, switch):
     """sets an x10 device"""
-    command = "/usr/local/bin/x10cmd rf %s %s" % (device, switch)
-    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
-    outs, errs = p.communicate()
-    if errs:
-        message = errs
-    else:
-        message = outs
-    message = "some message"
-    stdout = "some made up message"    
-    return make_response(jsonify({'command': command, 'status': p.stdout, 'message': message}), 200)
+    if switch == "On" or switch == "on" or switch == "off" or switch == "Off":
+        m = re.search('\w\d+', device)
+        if m:
+            command = "/usr/local/bin/x10cmd rf %s %s" % (device, switch)
+            p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
+            outs, errs = p.communicate()
+            if errs:
+                status = 'failure'
+                error = errs
+                message = ''
+            else:
+                status = 'success'
+                error = ''
+                message = outs
+            return make_response(jsonify(status=status, error=error, device=outs), 200)
 
 @app.route("/service/x10", methods=['GET'])
 def get_x10():
@@ -75,10 +80,20 @@ def get_x10():
         error = ''
         devices = ser_x10_status(outs)
         logging.info("Device status: %s" % devices)
-    return make_response(jsonify(status=status, message=error, devices=devices), 200)
+    return make_response(jsonify(status=status, error=error, devices=devices), 200)
 
     
 #tempC = int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3
+@app.route("/service/temp", methods=['GET'])
+def get_temp():
+    """gets the current temperature from the Raspberry Pi"""
+    command = "int(open('/sys/class/thermal/thermal_zone0/temp').read()) / 1e3"
+    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
+    outs, errs = p.communicate()
+    status = 'success'
+    errors = ''
+    return make_response(jsonify(status=status, error=error, temperature=outs), 200)
+    
     
 @app.errorhandler(404)
 def not_found(error):
